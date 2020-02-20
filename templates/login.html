@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Register
+	</title>
+
+	
+</head>
+
+<style>
+
+body {
+
+	background-color: yellow;
+}
+
+input {
+
+	padding: 10px;
+
+	width: 200px;
+
+	font-size: 25px;
+}
+
+</style>
+
+
+<body>
+
+	<h1> Register page works </h1>
+
+	<form action="http://localhost:5000/checkUser" method="POST" >
+
+       <div>
+		<input placeholder="Enter username" name="uu">
+
+	   </div>
+
+	    <div>
+
+		<input placeholder="Enter password" name="password">
+
+	     </div>
+
+	     <div>
+
+	     	<input type="submit" name="" value="Register">
+
+	     </div>
+
+	</form>
+
+	{% if not error == None : %}
+
+	<span> {{ error }} </span>
+
+	{% endif %}
+
+</body>
+
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Home
+	</title>
+</head>
+
+
+<style>
+
+span {
+	
+	font-size: 30px;
+
+}
+
+</style>
+
+
+<body>
+
+ {% for x in result : %}
+
+
+  <span> {{ x }} </span>
+  <span> {{ result.get(x) }}  <span>
+
+  <br>
+
+  	{% endfor %}
+
+
+</body>
+</html>
